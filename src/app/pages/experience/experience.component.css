@@ -1,0 +1,83 @@
+/* experience.component.css */
+
+#experience {
+  position: relative;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers {
+  display: flex; 
+  gap: 2rem; /* Adjust the gap between tables */
+}
+
+.details-container {
+  display: flex;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  margin: 1rem; 
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+td {
+  flex: 1;
+}
+
+article {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+  height: 30px;
+  width: 30px;
+}
+
+.table-title, .internship-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.internship-conrainer {
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  margin: 1rem;  padding: 1rem; 
+  box-sizing: border-box;
+}
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+  .details-container {
+    flex-direction: column; /* Stack columns on small screens */
+  }
+
+  article {
+    width: 100%; /* Full width on small screens */
+  }
+}
